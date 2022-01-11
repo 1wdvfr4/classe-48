@@ -29,7 +29,7 @@ class Player {
       score: this.score,
     });
   }
-  //TA
+  //AM
   getDistance() {
     var playerDistanceRef = database.ref("players/player" + this.index);
     playerDistanceRef.on("value", data => {
@@ -54,7 +54,7 @@ class Player {
     });
   }
 
-  //SA
+  //AA
   update() {
     var playerIndex = "players/player" + this.index;
     database.ref(playerIndex).update({
