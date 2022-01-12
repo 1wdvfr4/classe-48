@@ -217,7 +217,7 @@ class Game {
 }
 }
   handleFuel(index) {
-    // Agregando combústible
+    // Agregando combustible
     cars[index - 1].overlap(fuels, function(collector, collected) {
       player.fuel = 185;
       // "collected" es el sprite en el grupo de coleccionables que detona
@@ -328,7 +328,7 @@ handlePlayerControls() {
 }
 showRank() {
   swal({
-    title: `¡Impresionante!${"\n"}Rank${"\n"}${player.rank}`,
+    title: `¡Impresionante!${"\n"}Posición${"\n"}${player.rank}`,
     text: "Cruzaste la línea de meta con éxito",
     imageUrl:
       "https://raw.githubusercontent.com/vishalgaddam873/p5-multiplayer-car-race-game/master/assets/cup.png",
